@@ -1,5 +1,5 @@
-#include "../include/chessmind/pgn/PGNMoves.hpp"
-#include "extras/string_support.hpp"
+#include <chessmind/pgn/PGNMoves.hpp>
+#include <extras/strings.hpp>
 #include <iostream>
 
 using namespace std;

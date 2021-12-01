@@ -1,11 +1,11 @@
 #ifndef _CROSSTABLEMAP_HPP
 #define _CROSSTABLEMAP_HPP
 
-#include "../include/chessmind/ai/CrossTableInterface.hpp"
-#include "../include/chessmind/ai/CrossTableLine.hpp"
-#include "../include/chessmind/csv/CSVInterface.hpp"
-#include "../include/chessmind/stat/StatLine.hpp"
-#include "extras/crc64_support.hpp"
+#include <chessmind/ai/CrossTableInterface.hpp>
+#include <chessmind/ai/CrossTableLine.hpp>
+#include <chessmind/csv/CSVInterface.hpp>
+#include <chessmind/stat/StatLine.hpp>
+#include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>
@@ -25,25 +25,25 @@
  */
 
 class CrossTableMap implements CrossTableMapInterface {
-  friend std::ostream &operator<<(std::ostream &out, const CrossTableMap &obj);
-  friend std::istream &operator>>(std::istream &in, CrossTableMap &obj);
-  friend inline bool operator==(const CrossTableMap &a,
-                                const CrossTableMap &b) {
+  friend std::ostream& operator<<(std::ostream& out, const CrossTableMap& obj);
+  friend std::istream& operator>>(std::istream& in, CrossTableMap& obj);
+  friend inline bool operator==(const CrossTableMap& a,
+    const CrossTableMap& b) {
     return a._map == b._map;
   }
-  friend inline bool operator!=(const CrossTableMap &a,
-                                const CrossTableMap &b) {
+  friend inline bool operator!=(const CrossTableMap& a,
+    const CrossTableMap& b) {
     return !(a == b);
   }
 
   CrossTableLineMap _map;
   bool _verbose = false;
 
-  void insert(const StatLine &line);
+  void insert(const StatLine& line);
 
 public:
-  virtual void train(const StatLines &statLines);
-  virtual CrossTableLine predict(const FENLine &line);
+  virtual void train(const StatLines& statLines);
+  virtual CrossTableLine predict(const FENLine& line);
   virtual int size() const;
   virtual void verbose(bool on_or_off) { _verbose = on_or_off; };
 };
@@ -56,12 +56,12 @@ class CrossTableMapException : public std::exception {
   std::string _msg;
 
 public:
-  CrossTableMapException(const FENLine &fenLine) {
+  CrossTableMapException(const FENLine& fenLine) {
     _msg = fenLine.operator std::string();
   }
-  virtual char const *what() const noexcept { return _msg.c_str(); }
-  static void assertation(const CrossTableLineMap &map,
-                          const CrossTableLineKey &key, const FENLine &fenLine);
+  virtual char const* what() const noexcept { return _msg.c_str(); }
+  static void assertation(const CrossTableLineMap& map,
+    const CrossTableLineKey& key, const FENLine& fenLine);
 };
 
 #endif // _CROSSTABLEMAP_HPP

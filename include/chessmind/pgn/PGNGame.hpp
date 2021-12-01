@@ -2,13 +2,13 @@
 #define _PGNGAME_HPP
 
 #include <iostream>
-#include <extras/exceptions.hpp>
-#include "../include/chessmind/fen/FENLine.hpp"
-#include "../include/chessmind/pgn/PGNParameters.hpp"
-#include "../include/chessmind/pgn/PGNMoves.hpp"
-#include "../include/chessmind/game/ChessPiece.hpp"
-#include "../include/chessmind/game/ChessGame.hpp"
-#include "../include/chessmind/game/ChessBoard.hpp"
+#include <extras/interfaces.hpp>
+#include <chessmind/fen/FENLine.hpp>
+#include <chessmind/pgn/PGNParameters.hpp>
+#include <chessmind/pgn/PGNMoves.hpp>
+#include <chessmind/game/ChessPiece.hpp>
+#include <chessmind/game/ChessGame.hpp>
+#include <chessmind/game/ChessBoard.hpp>
 
 /**
  * @brief interface PGNGameInterface

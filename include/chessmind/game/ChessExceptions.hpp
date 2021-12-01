@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "../include/chessmind/game/ChessBoard.hpp"
+#include <chessmind/game/ChessBoard.hpp>
 
 //
 // Custom exceptions
@@ -20,12 +20,12 @@ public:
         _msg += col;
         _msg += row;
     };
-    OutOfBoundsException(const std::string &from_to)
+    OutOfBoundsException(const std::string& from_to)
     {
         _msg += from_to;
     };
-    const char *what() const throw() { return _msg.c_str(); };
-    static void assertation(const std::string &from_to)
+    const char* what() const throw() { return _msg.c_str(); };
+    static void assertation(const std::string& from_to)
     {
         if (from_to.size() != 2)
             throw OutOfBoundsException(from_to);
@@ -53,7 +53,7 @@ struct ImpossibleMoveException : public std::exception
     std::string _msg;
 
 public:
-    ImpossibleMoveException(char piece, char col, char row, const std::string &to)
+    ImpossibleMoveException(char piece, char col, char row, const std::string& to)
     {
         _msg += piece;
         _msg += " can't do a ";
@@ -61,7 +61,7 @@ public:
         _msg += row;
         _msg += to;
     };
-    const char *what() const throw() { return _msg.c_str(); };
+    const char* what() const throw() { return _msg.c_str(); };
 };
 
 struct InvalidPGNFileException : public std::exception
@@ -69,17 +69,17 @@ struct InvalidPGNFileException : public std::exception
     std::string _msg;
 
 public:
-    InvalidPGNFileException(const PGNotation &notation)
+    InvalidPGNFileException(const PGNotation& notation)
     {
         _msg += "ChessBoard has more then one piece that can occupy: ";
         _msg += notation.san();
     };
-    InvalidPGNFileException(const std::string &to)
+    InvalidPGNFileException(const std::string& to)
     {
         _msg += "ChessBoard has more then one piece that can occupy: ";
         _msg += to;
     };
-    const char *what() const throw() { return _msg.c_str(); };
+    const char* what() const throw() { return _msg.c_str(); };
 };
 
 struct InvalidSANFileException : public std::exception
@@ -87,12 +87,12 @@ struct InvalidSANFileException : public std::exception
     std::string _msg;
 
 public:
-    InvalidSANFileException(const std::string &to)
+    InvalidSANFileException(const std::string& to)
     {
         _msg += "Unsupported SAN format: ";
         _msg += to;
     };
-    const char *what() const throw() { return _msg.c_str(); };
+    const char* what() const throw() { return _msg.c_str(); };
 };
 
 struct NoAvailableMovesException : public std::exception
@@ -108,7 +108,7 @@ public:
         _msg += set;
         _msg += ") ";
     };
-    const char *what() const throw() { return _msg.c_str(); };
+    const char* what() const throw() { return _msg.c_str(); };
 };
 
 struct PGNFormatDetectedException : public std::exception
@@ -116,13 +116,13 @@ struct PGNFormatDetectedException : public std::exception
     std::string _msg;
 
 public:
-    PGNFormatDetectedException(const std::string &line)
+    PGNFormatDetectedException(const std::string& line)
     {
         _msg += "PGN (SAN) format detected: ";
         _msg += line;
     };
-    const char *what() const throw() { return _msg.c_str(); };
-    static void assertation(const std::string &line)
+    const char* what() const throw() { return _msg.c_str(); };
+    static void assertation(const std::string& line)
     {
         if (line != "" && line.at(0) == '[')
             throw PGNFormatDetectedException(line);

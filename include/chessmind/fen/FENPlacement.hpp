@@ -4,9 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "../include/chessmind/san/SANInterface.hpp"
-#include "../include/chessmind/game/ChessMoves.hpp"
-#include "../include/chessmind/pgn/PGNSymbolsInterface.hpp"
+#include <chessmind/san/SANInterface.hpp>
+#include <chessmind/game/ChessMoves.hpp>
+#include <chessmind/pgn/PGNSymbolsInterface.hpp>
 
 /**
  * @brief FENPlacementInterface

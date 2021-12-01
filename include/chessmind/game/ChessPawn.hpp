@@ -6,8 +6,8 @@
 #include <map>
 #include <vector>
 
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessPiece.hpp"
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessPiece.hpp>
 
 //
 // ChessPawn
@@ -19,10 +19,10 @@ abstract class ChessPawn implements ChessPiece
 protected:
     ChessPawn(char symbol, char col, char row)
         : ChessPiece(symbol, col, row) {}
-    ChessPawn() : ChessPiece(){};
+    ChessPawn() : ChessPiece() {};
 
 public:
-    virtual MovesTable allCalculatedMoves(const ChessBoard *board);
+    virtual MovesTable allCalculatedMoves(const ChessBoard* board);
     static std::string addPosition(char col, char row);
     bool pawnAtStart() const;
 };

@@ -2,7 +2,7 @@
 #define _SANINTERFACE_HPP
 
 #include <iostream>
-#include <extras/exceptions.hpp>
+#include <extras/interfaces.hpp>
 
 /**
  * @brief interface SANInterface

@@ -1,7 +1,7 @@
 #ifndef _CHESSPIECE_HPP
 #define _CHESSPIECE_HPP
 
-#include "../include/chessmind/game/ChessMoves.hpp"
+#include <chessmind/game/ChessMoves.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>
@@ -17,8 +17,8 @@ class ChessBoard;
 
 abstract class ChessPiece {
 
-  friend std::ostream &operator<<(std::ostream &out, const ChessPiece &obj);
-  friend std::istream &operator>>(std::istream &in, ChessPiece &obj);
+  friend std::ostream& operator<<(std::ostream& out, const ChessPiece& obj);
+  friend std::istream& operator>>(std::istream& in, ChessPiece& obj);
 
 private:
   char _symbol = -1;
@@ -29,22 +29,22 @@ private:
   MovesTable _moves;
 
 protected:
-  virtual MovesTable allLegalMoves(const MovesTable &moves,
-                                   const ChessBoard *board);
-  virtual MovesTable allCalculatedMoves(const ChessBoard *) {
+  virtual MovesTable allLegalMoves(const MovesTable& moves,
+    const ChessBoard* board);
+  virtual MovesTable allCalculatedMoves(const ChessBoard*) {
     throw "This method should not be called (directly)";
   }
 
   ChessPiece(char symbol, char col, char row);
 
 public:
-  ChessPiece(){};
-  ChessPiece invalidate(const ChessBoard *board);
+  ChessPiece() {};
+  ChessPiece invalidate(const ChessBoard* board);
   virtual int direction() { return _black_or_white ? 1 : -1; }
   char col() const { return _col; }
   char row() const { return _row; }
   char symbol() const { return _symbol; }
-  inline const MovesTable &moves() { return _moves; };
+  inline const MovesTable& moves() { return _moves; };
 };
 
 #endif // _CHESSPIECE_HPP

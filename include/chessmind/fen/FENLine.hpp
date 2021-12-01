@@ -6,9 +6,9 @@
 #include <string>
 #include <vector>
 
-#include "../include/chessmind/fen/FENPlacement.hpp"
-#include "extras/crcs.hpp"
-#include "extras/interfaces.hpp"
+#include <chessmind/fen/FENPlacement.hpp>
+#include <extras/crcs.hpp>
+#include <extras/interfaces.hpp>
 
 /**
  * @brief interface FENLineInterface

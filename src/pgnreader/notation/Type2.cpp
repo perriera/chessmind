@@ -1,18 +1,18 @@
 #include <iostream>
-#include "../include/chessmind/pgn/notation/Type2.hpp"
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
+#include <chessmind/pgn/notation/Type2.hpp>
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
 
 using namespace std;
 
-istream &operator>>(istream &in, PGNotationType2 &obj)
+istream& operator>>(istream& in, PGNotationType2& obj)
 {
     in >> skipws >> obj._piece;
     in >> obj._san;
     return in;
 }
 
-string PGNotationType2::resolve(const MovesTable &intersections, const string &black_or_white_set, const ChessBoard *board) const
+string PGNotationType2::resolve(const MovesTable& intersections, const string& black_or_white_set, const ChessBoard* board) const
 {
     if (intersections.size() == 0)
         throw NoAvailableMovesException(san(), black_or_white_set);

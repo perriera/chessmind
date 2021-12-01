@@ -1,8 +1,8 @@
 #ifndef _CROSSTABLELINE_HPP
 #define _CROSSTABLELINE_HPP
 
-#include "../include/chessmind/stat/StatLine.hpp"
-#include "extras/crc64_support.hpp"
+#include <chessmind/stat/StatLine.hpp>
+#include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>
@@ -18,23 +18,23 @@ typedef uint64_t CrossTableLineKey;
 
 interface CrossTableLineInterface
 {
-  virtual const CrossTableLineKey &key() const pure;
-  virtual void append(const ChessMove &chessMove) pure;
+  virtual const CrossTableLineKey& key() const pure;
+  virtual void append(const ChessMove& chessMove) pure;
   virtual ChessMoves moves() const pure;
   virtual int moves_size() const pure;
 };
 
 class CrossTableLine implements CrossTableLineInterface
 {
-  friend std::ostream &operator<<(std::ostream &out, const CrossTableLine &obj);
-  friend std::istream &operator>>(std::istream &in, CrossTableLine &obj);
-  friend inline bool operator==(const CrossTableLine &a,
-    const CrossTableLine &b)
+  friend std::ostream& operator<<(std::ostream& out, const CrossTableLine& obj);
+  friend std::istream& operator>>(std::istream& in, CrossTableLine& obj);
+  friend inline bool operator==(const CrossTableLine& a,
+    const CrossTableLine& b)
   {
     return a._key == b._key;
   }
-  friend inline bool operator!=(const CrossTableLine &a,
-    const CrossTableLine &b)
+  friend inline bool operator!=(const CrossTableLine& a,
+    const CrossTableLine& b)
   {
     return !(a == b);
   }
@@ -44,21 +44,21 @@ class CrossTableLine implements CrossTableLineInterface
   ChessMoves _chessMoves;
 
 public:
-  CrossTableLine(){};
-  CrossTableLine(const StatLine &statLine) : _statLine(statLine)
+  CrossTableLine() {};
+  CrossTableLine(const StatLine& statLine) : _statLine(statLine)
   {
     _key = FENLine::makeKey(_statLine.fenLine);
   };
 
-  virtual const CrossTableLineKey &key() const { return _key; };
+  virtual const CrossTableLineKey& key() const { return _key; };
 
   operator uint64_t() const { return _key; }
 
-  operator const StatLine &() const { return _statLine; }
+  operator const StatLine& () const { return _statLine; }
 
   operator ChessMoves() const { return _chessMoves; }
 
-  virtual void append(const ChessMove &chessMove)
+  virtual void append(const ChessMove& chessMove)
   {
     for (auto move : _chessMoves)
       if (move == chessMove)

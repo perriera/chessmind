@@ -6,8 +6,8 @@
 #include <map>
 #include <vector>
 
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessPiece.hpp"
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessPiece.hpp>
 
 //
 // ChessQueen
@@ -19,10 +19,10 @@ abstract class ChessQueen implements ChessPiece
 protected:
     ChessQueen(char symbol, char col, char row)
         : ChessPiece(symbol, col, row) {}
-    ChessQueen() : ChessPiece(){};
+    ChessQueen() : ChessPiece() {};
 
 public:
-    virtual MovesTable allCalculatedMoves(const ChessBoard *board);
+    virtual MovesTable allCalculatedMoves(const ChessBoard* board);
 };
 
 //

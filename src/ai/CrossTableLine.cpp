@@ -1,8 +1,8 @@
-#include "../include/chessmind/ai/CrossTableLine.hpp"
-#include "extras/ansi_colors.hpp"
-#include "extras/crc16_support.hpp"
-#include "extras/crc64_support.hpp"
-#include "extras/string_support.hpp"
+#include <chessmind/ai/CrossTableLine.hpp>
+#include <extras/devices/ansi_colors.hpp>
+#include <extras/crcs/octal_support.hpp>
+#include <extras/crcs.hpp>
+#include <extras/strings.hpp>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -10,7 +10,7 @@
 using namespace std;
 using namespace extras;
 
-ostream &operator<<(ostream &out, const CrossTableLine &obj) {
+ostream& operator<<(ostream& out, const CrossTableLine& obj) {
   char comma = ',';
   out << setfill('0') << setw(16) << std::hex;
   out << obj._key << comma;
@@ -24,7 +24,7 @@ ostream &operator<<(ostream &out, const CrossTableLine &obj) {
   return out;
 }
 
-istream &operator>>(istream &in, CrossTableLine &obj) {
+istream& operator>>(istream& in, CrossTableLine& obj) {
   char comma = ' ';
   in >> hex >> obj._key >> comma;
   in >> obj._statLine;
