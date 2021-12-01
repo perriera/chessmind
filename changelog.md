@@ -3,8 +3,8 @@
 > All notable changes to this project will be documented in this file.</br>
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).</br>
 > To add a tag to the git repository do:
-> > git tag -a v1.0.0 -m "Restarted"</br>
-> > git push origin v1.0.0
+> > git tag -a v1.1.0 -m "Using extras 5.5.1"</br>
+> > git push origin v1.1.0
 > 
 
 IMPORTANT: 
@@ -27,6 +27,10 @@ Correct URL for github, (for source compare)</br>
 Adding mock test cases </br>
 Adding unit test cases </br>
 Updated README.md accordinging</br>
+
+#### 1.1.0 (2021-09-01)
+### Refactored
+- Using extras 5.5.1
 
 #### 1.0.0 (2021-09-01)
 ### Resolved
@@ -122,7 +126,8 @@ Updated README.md accordinging</br>
 ### Removed
 - Conan package manager deprecated
 
-[Unreleased]: https://github.com/perriera/chessmind.git/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/perriera/chessmind.git/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/perriera/chessmind.git/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/perriera/chessmind.git/compare/v0.10.0...v1.0.0
 [0.10.0]: https://github.com/perriera/chessmind.git/compare/v0.9.0...v0.10.0
 [0.1.0]: https://github.com/perriera/chessmind.git/releases/tag/v0.1.0
