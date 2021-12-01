@@ -8,7 +8,7 @@
 #include "../include/chessmind/game/ChessPawn.hpp"
 #include "../include/chessmind/pgn/PGNGame.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 

@@ -5,7 +5,7 @@
 #include "../include/chessmind/ai/CrossTableLine.hpp"
 #include "../include/chessmind/csv/CSVInterface.hpp"
 #include "../include/chessmind/stat/StatLine.hpp"
-#include "extras/crc64_support.hpp"
+#include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>
@@ -22,10 +22,10 @@
 typedef int CrossTableIOLocation;
 
 class CrossTableIO implements CrossTableMapInterface {
-  friend std::ostream &operator<<(std::ostream &out, const CrossTableIO &obj);
-  friend std::istream &operator>>(std::istream &in, CrossTableIO &obj);
+  friend std::ostream& operator<<(std::ostream& out, const CrossTableIO& obj);
+  friend std::istream& operator>>(std::istream& in, CrossTableIO& obj);
 
-  std::istream *_in;
+  std::istream* _in;
   CrossTableIOLocation _start;
   CrossTableIOLocation _location;
   CrossTableIOLocation _end;
@@ -33,8 +33,8 @@ class CrossTableIO implements CrossTableMapInterface {
   bool _verbose = false;
 
 public:
-  virtual void train(const StatLines &statLines);
-  virtual CrossTableLine predict(const FENLine &line);
+  virtual void train(const StatLines& statLines);
+  virtual CrossTableLine predict(const FENLine& line);
   virtual int size() const;
   virtual void verbose(bool on_or_off) { _verbose = on_or_off; };
 };

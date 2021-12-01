@@ -1,8 +1,8 @@
 #include "../include/chessmind/pgn/PGNGame.hpp"
 #include "../include/chessmind/game/ChessBoard.hpp"
 #include "../include/chessmind/pgn/PGNReader.hpp"
-#include "extras/ansi_colors.hpp"
-#include "extras/string_support.hpp"
+#include <extras/devices/ansi_colors.hpp>
+#include <extras/strings.hpp>
 #include <iostream>
 #include <fstream>
 #include "../include/chessmind/fen/FENReader.hpp"

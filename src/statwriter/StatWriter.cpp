@@ -3,7 +3,7 @@
 #include "../include/chessmind/pgn/PGNGame.hpp"
 #include "../include/chessmind/stat/NextMove.hpp"
 #include "../include/chessmind/stat/StatHeader.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 #include <iomanip>
 #include <iostream>
 

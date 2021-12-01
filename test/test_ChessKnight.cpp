@@ -7,7 +7,7 @@
 #include "../include/chessmind/game/ChessExceptions.hpp"
 #include "../include/chessmind/game/ChessKnight.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 
@@ -29,7 +29,7 @@ SCENARIO("Verify ChessKnight incorrectly placed", "[ChessBoard]") {
 }
 
 SCENARIO("Verify ChessKnight calculate all possible positions",
-         "[ChessBoard]") {
+  "[ChessBoard]") {
   ChessBoard board;
   WhiteKnight knight('b', '1');
   auto moves = knight.allCalculatedMoves(&board);

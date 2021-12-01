@@ -9,20 +9,20 @@
 #include "../include/chessmind/pgn/notation/Type6.hpp"
 #include "../include/chessmind/pgn/notation/TypeCastle.hpp"
 #include "../include/chessmind/pgn/notation/TypePromote.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 #include <ctype.h>
 #include <iostream>
 
 using namespace std;
 
-ostream &operator<<(ostream &out, const PGNotation &) {
+ostream& operator<<(ostream& out, const PGNotation&) {
   // if (obj._piece!=-1)
   //     out << obj._piece;
   // out << obj._san;
   return out;
 }
 
-istream &operator>>(istream &in, PGNotation &obj) {
+istream& operator>>(istream& in, PGNotation& obj) {
   string word;
   in >> word;
   bool kingCheck = (word.find_last_of('+') != string::npos);

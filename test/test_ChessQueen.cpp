@@ -7,7 +7,7 @@
 #include "../include/chessmind/game/ChessExceptions.hpp"
 #include "../include/chessmind/game/ChessQueen.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 

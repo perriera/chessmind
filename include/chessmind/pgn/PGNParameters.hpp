@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <extras/exceptions.hpp>
+#include <extras/interfaces.hpp>
 
 //
 // GameParameter

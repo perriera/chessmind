@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <extras/interfaces.hpp>
-#include <extras/exceptions.hpp>
+#include <extras/interfaces.hpp>
 #include "../include/chessmind/game/ChessMoves.hpp"
 #include "../include/chessmind/game/ChessBoard.hpp"
 

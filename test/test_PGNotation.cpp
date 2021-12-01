@@ -9,7 +9,7 @@
 #include "../include/chessmind/pgn/PGNotation.hpp"
 #include "../include/chessmind/pgn/notation/TypeCastle.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 

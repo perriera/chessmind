@@ -9,11 +9,11 @@
 #include "../include/chessmind/fen/FENReader.hpp"
 #include "../include/chessmind/stat/StatWriter.hpp"
 #include "catch.hpp"
-#include "extras/files.hpp"
-#include "extras/ansi_colors.hpp"
-#include "extras/crc32_support.hpp"
-#include "extras/crc64_support.hpp"
-#include "extras/string_support.hpp"
+#include <extras/filesystem/files.hpp>
+#include <extras/devices/ansi_colors.hpp>
+#include <extras/crcs.hpp>
+#include <extras/crcs.hpp>
+#include <extras/strings.hpp>
 
 using namespace std;
 using namespace extras;

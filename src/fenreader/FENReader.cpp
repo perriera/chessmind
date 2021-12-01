@@ -1,6 +1,6 @@
 #include "../include/chessmind/fen/FENReader.hpp"
 #include "../include/chessmind/fen/FENLine.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 #include <iostream>
 
 using namespace std;

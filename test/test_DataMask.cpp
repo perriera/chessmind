@@ -8,7 +8,7 @@
 #include "../include/chessmind/stat/StatHeader.hpp"
 #include "../include/chessmind/stat/StatWriter.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 

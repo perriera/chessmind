@@ -1,10 +1,10 @@
 #ifndef _CHESSMOVE_HPP
 #define _CHESSMOVE_HPP
 
-#include "../include/chessmind/game/Assigned.hpp"
+#include <chessmind/game/Assigned.hpp>
 #include "../include/chessmind/game/ChessPosition.hpp"
 #include "../include/chessmind/game/ChessSAN.hpp"
-#include "extras/octal_support.hpp"
+#include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>

@@ -11,10 +11,10 @@
 #include "../include/chessmind/stat/StatWriter.hpp"
 #include "catch.hpp"
 // #include "extras/Directory.hpp"
-// #include "extras/ansi_colors.hpp"
-#include "extras/crc32_support.hpp"
-#include "extras/crc64_support.hpp"
-#include "extras/string_support.hpp"
+// #include <extras/devices/ansi_colors.hpp>
+#include <extras/crcs.hpp>
+#include <extras/crcs.hpp>
+#include <extras/strings.hpp>
 
 using namespace std;
 

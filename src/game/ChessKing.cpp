@@ -2,12 +2,12 @@
 #include "../include/chessmind/game/ChessBoard.hpp"
 #include "../include/chessmind/game/ChessExceptions.hpp"
 #include "../include/chessmind/game/ChessPawn.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 #include <iostream>
 
 using namespace std;
 
-MovesTable ChessKing::allCalculatedMoves(const ChessBoard *board) {
+MovesTable ChessKing::allCalculatedMoves(const ChessBoard* board) {
   MovesTable possibleMoves;
   char _col = col();
   char _row = row();

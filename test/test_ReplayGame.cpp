@@ -5,7 +5,7 @@
 
 #include "../include/chessmind/pgn/PGNReader.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 

@@ -1,6 +1,6 @@
 #include "../include/chessmind/masking/MaskedLine.hpp"
-#include "extras/crc16_support.hpp"
-#include "extras/string_support.hpp"
+#include <extras/crcs.hpp>
+#include <extras/strings.hpp>
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
@@ -50,7 +50,7 @@ string maskSan(string san) {
   return converted;
 }
 
-ostream &operator<<(ostream &out, const MaskedLine &obj) {
+ostream& operator<<(ostream& out, const MaskedLine& obj) {
   out << maskInt(obj.statLine.moveNo, 3) << ", ";
   out << maskWhoseMove(obj.statLine.whoseMove) << ", ";
   out << maskMove(obj.statLine.lastMove) << ", ";
@@ -63,4 +63,4 @@ ostream &operator<<(ostream &out, const MaskedLine &obj) {
   return out;
 }
 
-istream &operator>>(istream &in, MaskedLine &) { return in; }
+istream& operator>>(istream& in, MaskedLine&) { return in; }

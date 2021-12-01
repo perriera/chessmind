@@ -2,7 +2,7 @@
 #define _PGNGAME_HPP
 
 #include <iostream>
-#include <extras/exceptions.hpp>
+#include <extras/interfaces.hpp>
 #include "../include/chessmind/fen/FENLine.hpp"
 #include "../include/chessmind/pgn/PGNParameters.hpp"
 #include "../include/chessmind/pgn/PGNMoves.hpp"

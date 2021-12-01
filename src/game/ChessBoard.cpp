@@ -6,8 +6,8 @@
 #include "../include/chessmind/game/ChessPawn.hpp"
 #include "../include/chessmind/game/ChessQueen.hpp"
 #include "../include/chessmind/game/ChessRook.hpp"
-#include "extras/ansi_colors.hpp"
-#include "extras/string_support.hpp"
+#include <extras/devices/ansi_colors.hpp>
+#include <extras/strings.hpp>
 #include <ctype.h>
 #include <iostream>
 #include <sstream>

@@ -4,7 +4,7 @@
 // #include <fstream>
 
 // #include "catch.hpp"
-// #include "extras/string_support.hpp"
+// #include <extras/strings.hpp>
 // #include "../include/chessmind/fen/FENReader.hpp"
 // #include "../include/chessmind/stat/StatWriter.hpp"
 // #include "../include/chessmind/stat/StatHeader.hpp"

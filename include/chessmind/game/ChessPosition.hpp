@@ -3,8 +3,8 @@
 
 #include "../include/chessmind/game/Assigned.hpp"
 #include "../include/chessmind/game/ChessSquare.hpp"
-#include <extras/octal_support.hpp>
 #include <extras/interfaces.hpp>
+#include <extras/crcs/octal_support.hpp>
 #include <iostream>
 #include <map>
 #include <sstream>
@@ -29,7 +29,7 @@ interface ChessPositionInterface extends AssignedInterface
 
 class ChessBoard;
 
-concrete class ChessPosition implements ChessPositionInterface,
+concrete class ChessPosition implements ChessPositionInterface with
 extras::OctalInterface
 {
   friend std::ostream& operator<<(std::ostream& out, const ChessPosition& obj);

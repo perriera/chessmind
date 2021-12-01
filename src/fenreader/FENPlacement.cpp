@@ -1,7 +1,7 @@
 #include "../include/chessmind/fen/FENPlacement.hpp"
 #include "../include/chessmind/game/ChessBoard.hpp"
 #include "../include/chessmind/game/ChessExceptions.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 #include <ctype.h>
 #include <iostream>
 

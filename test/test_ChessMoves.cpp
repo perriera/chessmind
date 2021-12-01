@@ -11,7 +11,7 @@
 #include "../include/chessmind/pgn/PGNotation.hpp"
 #include "../include/chessmind/pgn/notation/TypeCastle.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 
@@ -86,8 +86,8 @@ SCENARIO("Verify ChessMoves", "[ChessMove]")
 {
 
   GIVEN("we have multple ChessMove instances")
-  WHEN("we put those instances inside ChessMoves")
-  THEN("we easily retrieve them for later")
+    WHEN("we put those instances inside ChessMoves")
+    THEN("we easily retrieve them for later")
   {
     ChessMoves moves;
     moves.push_back("e2e4");
@@ -99,8 +99,8 @@ SCENARIO("Verify ChessMoves (select moves of starting column)", "[ChessMove]")
 {
 
   GIVEN("we have multple ChessMove instances")
-  WHEN("we need to find only those moves that belong to a particular column")
-  THEN("we need to retrieve only those moves that start from that column")
+    WHEN("we need to find only those moves that belong to a particular column")
+    THEN("we need to retrieve only those moves that start from that column")
   {
     ifstream myfile("data/pgn/kasparov_privorotsky_1974.pgn");
     REQUIRE(myfile.good());
@@ -124,7 +124,8 @@ SCENARIO("Verify ChessMoves (select moves of starting column)", "[ChessMove]")
       REQUIRE(board.symbolAt("c5") == ' ');
       REQUIRE(board.symbolAt("e5") == 'P');
       REQUIRE(board.symbolAt("d4") == 'P');
-    } catch (exception &ex) {
+    }
+    catch (exception& ex) {
       cout << game.parameters() << endl;
       cout << ex.what() << endl;
       cout << endl;

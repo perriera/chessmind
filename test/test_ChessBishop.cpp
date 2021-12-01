@@ -7,7 +7,7 @@
 #include "../include/chessmind/game/ChessBoard.hpp"
 #include "../include/chessmind/game/ChessExceptions.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 
@@ -34,7 +34,7 @@ SCENARIO("Verify ChessBishop incorrectly placed", "[ChessBoard]") {
 }
 
 SCENARIO("Verify ChessBishop calculate all possible positions",
-         "[ChessBoard]") {
+  "[ChessBoard]") {
   ChessBoard board;
   board.move("a2a3");
   cout << board.draw() << endl;

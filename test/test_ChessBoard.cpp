@@ -6,11 +6,11 @@
 #include "../include/chessmind/game/ChessBoard.hpp"
 #include "../include/chessmind/game/ChessExceptions.hpp"
 #include "catch.hpp"
-#include "extras/string_support.hpp"
+#include <extras/strings.hpp>
 
 using namespace std;
 
-static void test_board(istream &in)
+static void test_board(istream& in)
 {
   ChessBoard board;
   in >> board;
