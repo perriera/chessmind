@@ -1,5 +1,5 @@
-#include "../include/chessmind/masking/DataMask.hpp"
-#include "../include/chessmind/masking/MaskedLine.hpp"
+#include <chessmind/masking/DataMask.hpp>
+#include <chessmind/masking/MaskedLine.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

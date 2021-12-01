@@ -3,10 +3,10 @@
 #include <sstream>// std::stringstream
 #include <string>// std::string
 
-#include "../include/chessmind/fen/FENReader.hpp"
-#include "../include/chessmind/masking/DataMask.hpp"
-#include "../include/chessmind/stat/StatHeader.hpp"
-#include "../include/chessmind/stat/StatWriter.hpp"
+#include <chessmind/fen/FENReader.hpp>
+#include <chessmind/masking/DataMask.hpp>
+#include <chessmind/stat/StatHeader.hpp>
+#include <chessmind/stat/StatWriter.hpp>
 #include "catch.hpp"
 #include <extras/strings.hpp>
 

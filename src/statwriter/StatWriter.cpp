@@ -1,8 +1,8 @@
-#include "../include/chessmind/stat/StatWriter.hpp"
-#include "../include/chessmind/fen/FENReader.hpp"
-#include "../include/chessmind/pgn/PGNGame.hpp"
-#include "../include/chessmind/stat/NextMove.hpp"
-#include "../include/chessmind/stat/StatHeader.hpp"
+#include <chessmind/stat/StatWriter.hpp>
+#include <chessmind/fen/FENReader.hpp>
+#include <chessmind/pgn/PGNGame.hpp>
+#include <chessmind/stat/NextMove.hpp>
+#include <chessmind/stat/StatHeader.hpp>
 #include <extras/strings.hpp>
 #include <iomanip>
 #include <iostream>

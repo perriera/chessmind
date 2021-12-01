@@ -1,4 +1,4 @@
-#include "../include/chessmind/pgn/PGNReader.hpp"
+#include <chessmind/pgn/PGNReader.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

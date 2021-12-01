@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <vector>
-#include "StatLine.hpp"
-#include "../game/ChessMoves.hpp"
+#include <chessmind/stat/StatLine.hpp>
+#include <chessmind/game/ChessMoves.hpp>
 
 //
 // StatWriter

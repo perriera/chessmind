@@ -1,4 +1,4 @@
-#include "../include/chessmind/masking/MaskedLine.hpp"
+#include <chessmind/masking/MaskedLine.hpp>
 #include <extras/crcs.hpp>
 #include <extras/strings.hpp>
 #include <algorithm>

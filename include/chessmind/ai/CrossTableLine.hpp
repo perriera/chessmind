@@ -1,7 +1,7 @@
 #ifndef _CROSSTABLELINE_HPP
 #define _CROSSTABLELINE_HPP
 
-#include "../include/chessmind/stat/StatLine.hpp"
+#include <chessmind/stat/StatLine.hpp>
 #include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>

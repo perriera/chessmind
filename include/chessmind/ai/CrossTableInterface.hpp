@@ -1,7 +1,7 @@
 #ifndef _CROSSTABLEINTERFACE_HPP
 #define _CROSSTABLEINTERFACE_HPP
 
-#include "../include/chessmind/ai/CrossTableLine.hpp"
+#include <chessmind/ai/CrossTableLine.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
 #include <map>
@@ -14,8 +14,8 @@
 //
 
 interface CrossTableMapInterface {
-  virtual void train(const StatLines &statLines) pure;
-  virtual CrossTableLine predict(const FENLine &line) pure;
+  virtual void train(const StatLines& statLines) pure;
+  virtual CrossTableLine predict(const FENLine& line) pure;
   virtual int size() const pure;
   virtual void verbose(bool on_or_off) pure;
 };
@@ -28,8 +28,8 @@ class CrossTableException : public std::exception {
   std::string _msg;
 
 public:
-  CrossTableException(const std::string &msg) : _msg(msg){};
-  virtual char const *what() const noexcept { return _msg.c_str(); }
+  CrossTableException(const std::string& msg) : _msg(msg) {};
+  virtual char const* what() const noexcept { return _msg.c_str(); }
 };
 
 #endif // _CROSSTABLEINTERFACE_HPP

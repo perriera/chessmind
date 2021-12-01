@@ -5,9 +5,9 @@
 #include <string>
 #include <map>
 #include <vector>
-#include "../include/chessmind/game/ChessPiece.hpp"
-#include "../include/chessmind/fen/FENLine.hpp"
-#include "../include/chessmind/san/SANInterface.hpp"
+#include <chessmind/game/ChessPiece.hpp>
+#include <chessmind/fen/FENLine.hpp>
+#include <chessmind/san/SANInterface.hpp>
 
 
 /**

@@ -1,4 +1,4 @@
-#include "../include/chessmind/stat/NextMove.hpp"
+#include <chessmind/stat/NextMove.hpp>
 #include <extras/strings.hpp>
 #include <iomanip>
 #include <iostream>

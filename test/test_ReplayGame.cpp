@@ -3,7 +3,7 @@
 #include <sstream>// std::stringstream
 #include <string>// std::string
 
-#include "../include/chessmind/pgn/PGNReader.hpp"
+#include <chessmind/pgn/PGNReader.hpp>
 #include "catch.hpp"
 #include <extras/strings.hpp>
 

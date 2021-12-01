@@ -1,6 +1,6 @@
-#include "../include/chessmind/game/ChessBishop.hpp"
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
+#include <chessmind/game/ChessBishop.hpp>
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

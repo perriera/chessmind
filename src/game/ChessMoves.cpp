@@ -1,7 +1,7 @@
-#include "../include/chessmind/game/ChessMoves.hpp"
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
-#include "../include/chessmind/game/ChessPosition.hpp"
+#include <chessmind/game/ChessMoves.hpp>
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
+#include <chessmind/game/ChessPosition.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

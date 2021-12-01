@@ -3,10 +3,10 @@
 #include <sstream>// std::stringstream
 #include <string>// std::string
 
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
-#include "../include/chessmind/game/ChessPawn.hpp"
-#include "../include/chessmind/pgn/PGNGame.hpp"
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
+#include <chessmind/game/ChessPawn.hpp>
+#include <chessmind/pgn/PGNGame.hpp>
 #include "catch.hpp"
 #include <extras/strings.hpp>
 

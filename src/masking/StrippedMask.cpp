@@ -1,4 +1,4 @@
-#include "../include/chessmind/masking/StrippedMask.hpp"
+#include <chessmind/masking/StrippedMask.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

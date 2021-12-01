@@ -1,4 +1,4 @@
-#include "../include/chessmind/ai/CrossTableLine.hpp"
+#include <chessmind/ai/CrossTableLine.hpp>
 #include <extras/devices/ansi_colors.hpp>
 #include <extras/crcs/octal_support.hpp>
 #include <extras/crcs.hpp>

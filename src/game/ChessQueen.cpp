@@ -1,8 +1,8 @@
-#include "../include/chessmind/game/ChessQueen.hpp"
-#include "../include/chessmind/game/ChessBishop.hpp"
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
-#include "../include/chessmind/game/ChessRook.hpp"
+#include <chessmind/game/ChessQueen.hpp>
+#include <chessmind/game/ChessBishop.hpp>
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
+#include <chessmind/game/ChessRook.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

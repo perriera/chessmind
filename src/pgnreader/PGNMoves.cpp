@@ -1,4 +1,4 @@
-#include "../include/chessmind/pgn/PGNMoves.hpp"
+#include <chessmind/pgn/PGNMoves.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

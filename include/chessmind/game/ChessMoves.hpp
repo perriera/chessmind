@@ -2,8 +2,8 @@
 #define _CHESSMOVE_HPP
 
 #include <chessmind/game/Assigned.hpp>
-#include "../include/chessmind/game/ChessPosition.hpp"
-#include "../include/chessmind/game/ChessSAN.hpp"
+#include <chessmind/game/ChessPosition.hpp>
+#include <chessmind/game/ChessSAN.hpp>
 #include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>

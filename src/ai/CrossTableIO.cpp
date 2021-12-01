@@ -1,5 +1,5 @@
-#include "../include/chessmind/ai/CrossTableIO.hpp"
-#include "../include/chessmind/ai/CrossTableInterface.hpp"
+#include <chessmind/ai/CrossTableIO.hpp>
+#include <chessmind/ai/CrossTableInterface.hpp>
 #include <extras/devices/ansi_colors.hpp>
 #include <extras/crcs.hpp>
 #include <extras/crcs.hpp>

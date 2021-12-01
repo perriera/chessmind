@@ -1,4 +1,4 @@
-#include "../include/chessmind/stat/StatHeader.hpp"
+#include <chessmind/stat/StatHeader.hpp>
 #include <extras/strings.hpp>
 #include <iostream>
 

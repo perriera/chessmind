@@ -3,8 +3,8 @@
 #include <sstream>  // std::stringstream
 #include <string>   // std::string
 
-#include "../include/chessmind/game/ChessExceptions.hpp"
-#include "../include/chessmind/game/ChessSquare.hpp"
+#include <chessmind/game/ChessExceptions.hpp>
+#include <chessmind/game/ChessSquare.hpp>
 #include "catch.hpp"
 #include <extras/strings.hpp>
 

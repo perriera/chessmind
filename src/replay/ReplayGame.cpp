@@ -1,4 +1,4 @@
-#include "../include/chessmind/replay/ReplayGame.hpp"
+#include <chessmind/replay/ReplayGame.hpp>
 #include <extras/strings.hpp>
 #include <iomanip>
 #include <iostream>

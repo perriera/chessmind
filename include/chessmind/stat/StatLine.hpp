@@ -3,9 +3,9 @@
 
 #include <iostream>
 #include <vector>
-#include "../fen/FENPlacement.hpp"
-#include "../include/chessmind/game/ChessMoves.hpp"
-#include "../include/chessmind/fen/FENLine.hpp"
+#include <chessmind/fen/FENPlacement.hpp>
+#include <chessmind/game/ChessMoves.hpp>
+#include <chessmind/fen/FENLine.hpp>
 
 //
 // StatLine
@@ -14,9 +14,9 @@
 
 struct StatLine
 {
-    friend std::ostream &operator<<(std::ostream &out, const StatLine &obj);
-    friend std::istream &operator>>(std::istream &in, StatLine &obj);
-    friend bool operator==(const StatLine &a, const StatLine &b)
+    friend std::ostream& operator<<(std::ostream& out, const StatLine& obj);
+    friend std::istream& operator>>(std::istream& in, StatLine& obj);
+    friend bool operator==(const StatLine& a, const StatLine& b)
     {
         std::stringstream ss1;
         ss1 << a;
@@ -24,7 +24,7 @@ struct StatLine
         ss2 << b;
         return ss1.str() == ss2.str();
     }
-    friend inline bool operator!=(const StatLine &a, const StatLine &b)
+    friend inline bool operator!=(const StatLine& a, const StatLine& b)
     {
         return !(a == b);
     }
@@ -38,7 +38,7 @@ struct StatLine
     char pieceTaken = ' ';
     ChessMove nextMove;
 
-    operator const FENLine &() const
+    operator const FENLine& () const
     {
         return fenLine;
     }

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "../stat/StatLine.hpp"
+#include <chessmind/stat/StatLine.hpp>
 
 //
 // FENReader
@@ -13,8 +13,8 @@
 
 struct MaskedLine
 {
-    friend std::ostream &operator<<(std::ostream &out, const MaskedLine &obj);
-    friend std::istream &operator>>(std::istream &in, MaskedLine &obj);
+    friend std::ostream& operator<<(std::ostream& out, const MaskedLine& obj);
+    friend std::istream& operator>>(std::istream& in, MaskedLine& obj);
 
     StatLine statLine;
 

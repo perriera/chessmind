@@ -2,7 +2,7 @@
 #include <iostream>
 
 #include "catch.hpp"
-#include "../include/chessmind/game/ChessGame.hpp"
+#include <chessmind/game/ChessGame.hpp>
 #include "fakeit.hpp"
 
 using namespace extras;

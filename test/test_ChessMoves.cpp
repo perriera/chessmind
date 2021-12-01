@@ -3,13 +3,13 @@
 #include <sstream>// std::stringstream
 #include <string>// std::string
 
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessExceptions.hpp"
-#include "../include/chessmind/game/ChessMoves.hpp"
-#include "../include/chessmind/game/ChessPosition.hpp"
-#include "../include/chessmind/pgn/PGNGame.hpp"
-#include "../include/chessmind/pgn/PGNotation.hpp"
-#include "../include/chessmind/pgn/notation/TypeCastle.hpp"
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessExceptions.hpp>
+#include <chessmind/game/ChessMoves.hpp>
+#include <chessmind/game/ChessPosition.hpp>
+#include <chessmind/pgn/PGNGame.hpp>
+#include <chessmind/pgn/PGNotation.hpp>
+#include <chessmind/pgn/notation/TypeCastle.hpp>
 #include "catch.hpp"
 #include <extras/strings.hpp>
 

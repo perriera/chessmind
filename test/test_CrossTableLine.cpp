@@ -3,9 +3,9 @@
 #include <sstream>// std::stringstream
 #include <string>// std::string
 
-#include "../include/chessmind/ai/CrossTableLine.hpp"
-#include "../include/chessmind/fen/FENReader.hpp"
-#include "../include/chessmind/stat/StatWriter.hpp"
+#include <chessmind/ai/CrossTableLine.hpp>
+#include <chessmind/fen/FENReader.hpp>
+#include <chessmind/stat/StatWriter.hpp>
 #include "catch.hpp"
 #include <extras/devices/ansi_colors.hpp>
 #include <extras/crcs.hpp>

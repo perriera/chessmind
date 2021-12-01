@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <vector>
-#include "FENLine.hpp"
+#include <chessmind/fen/FENLine.hpp>
 
 /**
  *

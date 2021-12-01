@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include "../include/chessmind/game/ChessPosition.hpp"
+#include <chessmind/game/ChessPosition.hpp>
 #include <extras/interfaces.hpp>
 
 //
@@ -16,7 +16,7 @@
 
 interface SymbolAtInterface {
   virtual char symbolAt(char col, char row) const = 0;
-  virtual char symbolAt(const ChessPosition &pos) const = 0;
+  virtual char symbolAt(const ChessPosition& pos) const = 0;
 };
 
 #endif // _PGNSYMBOLS_HPP

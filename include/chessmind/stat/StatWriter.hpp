@@ -4,10 +4,10 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "StatLine.hpp"
-#include "../fen/FENReader.hpp"
-#include "../pgn/PGNGame.hpp"
-#include "../include/chessmind/csv/CSVInterface.hpp"
+#include <chessmind/stat/StatLine.hpp>
+#include <chessmind/fen/FENReader.hpp>
+#include <chessmind/pgn/PGNGame.hpp>
+#include <chessmind/csv/CSVInterface.hpp>
 
 //
 // StatWriter
@@ -16,22 +16,22 @@
 
 interface StatWriterInterface
 {
-    virtual void convert(const FENReaderInterface &femLines, const PGNGameInterface &pgnMoves) pure;
+    virtual void convert(const FENReaderInterface& femLines, const PGNGameInterface& pgnMoves) pure;
 };
 
 class StatWriter implements StatWriterInterface, CSVInterface
 {
-    friend std::ostream &operator<<(std::ostream &out, const StatWriter &obj);
-    friend std::istream &operator>>(std::istream &in, StatWriter &obj);
-    friend bool operator==(const StatWriter &a, const StatWriter &b)
+    friend std::ostream& operator<<(std::ostream& out, const StatWriter& obj);
+    friend std::istream& operator>>(std::istream& in, StatWriter& obj);
+    friend bool operator==(const StatWriter& a, const StatWriter& b)
     {
         std::stringstream ss1;
         ss1 << a;
         std::stringstream ss2;
         ss2 << b;
-        return ss1.str()==ss2.str();
+        return ss1.str() == ss2.str();
     }
-    friend inline bool operator!=(const StatWriter &a, const StatWriter &b)
+    friend inline bool operator!=(const StatWriter& a, const StatWriter& b)
     {
         return !(a == b);
     }
@@ -40,10 +40,10 @@ private:
     StatLines _lines;
 
 public:
-    const StatLines &lines() { return _lines; }
-    virtual void convert(const FENReaderInterface &femLines, const PGNGameInterface &pgnMoves);
+    const StatLines& lines() { return _lines; }
+    virtual void convert(const FENReaderInterface& femLines, const PGNGameInterface& pgnMoves);
     virtual std::string csv_out() const;
-    virtual void csv_in(const std::string &csv);
+    virtual void csv_in(const std::string& csv);
 };
 
 #endif // _STATWRITER_HPP

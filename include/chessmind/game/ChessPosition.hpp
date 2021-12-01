@@ -1,8 +1,8 @@
 #ifndef _CHESSPOSITION_HPP
 #define _CHESSPOSITION_HPP
 
-#include "../include/chessmind/game/Assigned.hpp"
-#include "../include/chessmind/game/ChessSquare.hpp"
+#include <chessmind/game/Assigned.hpp>
+#include <chessmind/game/ChessSquare.hpp>
 #include <extras/interfaces.hpp>
 #include <extras/crcs/octal_support.hpp>
 #include <iostream>

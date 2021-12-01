@@ -6,8 +6,8 @@
 #include <map>
 #include <vector>
 
-#include "../include/chessmind/game/ChessBoard.hpp"
-#include "../include/chessmind/game/ChessPiece.hpp"
+#include <chessmind/game/ChessBoard.hpp>
+#include <chessmind/game/ChessPiece.hpp>
 
 //
 // ChessBishop
@@ -19,11 +19,11 @@ abstract class ChessBishop implements ChessPiece
 protected:
     ChessBishop(char symbol, char col, char row)
         : ChessPiece(symbol, col, row) {}
-    ChessBishop() : ChessPiece(){};
+    ChessBishop() : ChessPiece() {};
 
 public:
-    virtual MovesTable allCalculatedMoves(const ChessBoard *board);
-    static MovesTable addDirection(char col, char row, bool up, bool right, const ChessBoard *board, const ChessPiece *piece);
+    virtual MovesTable allCalculatedMoves(const ChessBoard* board);
+    static MovesTable addDirection(char col, char row, bool up, bool right, const ChessBoard* board, const ChessPiece* piece);
 
 };
 

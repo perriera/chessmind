@@ -1,10 +1,10 @@
 #ifndef _CROSSTABLEIO_HPP
 #define _CROSSTABLEIO_HPP
 
-#include "../include/chessmind/ai/CrossTableInterface.hpp"
-#include "../include/chessmind/ai/CrossTableLine.hpp"
-#include "../include/chessmind/csv/CSVInterface.hpp"
-#include "../include/chessmind/stat/StatLine.hpp"
+#include <chessmind/ai/CrossTableInterface.hpp>
+#include <chessmind/ai/CrossTableLine.hpp>
+#include <chessmind/csv/CSVInterface.hpp>
+#include <chessmind/stat/StatLine.hpp>
 #include <extras/crcs.hpp>
 #include <extras/interfaces.hpp>
 #include <iostream>
